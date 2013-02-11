@@ -1,0 +1,19 @@
+application: dash-m-dot
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: false
+
+libraries:
+- name: jinja2
+  version: "2.6"
+
+handlers:
+- url: /external
+  static_dir: external
+- url: /app
+  static_dir: app
+- url: /api/data/.*
+  script: data.py
+- url: /.*
+  script: main.py

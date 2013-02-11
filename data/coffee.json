@@ -1,0 +1,29 @@
+{
+    "favoriteSpots": [
+        { "name": "Blue Bottle Coffee", "url": "http://www.bluebottlecoffee.com/" },
+        { "name": "Coffee Bar", "url": "http://www.coffeebar-usa.com/" },
+        { "name": "Four Barrel Coffee", "url": "http://fourbarrelcoffee.com/" },
+        { "name": "Ritual Coffee", "url": "http://www.ritualroasters.com/" },
+        { "name": "Sightglass Coffee", "url": "http://sightglasscoffee.com/" }
+    ],
+    "favoriteDetails":[
+        {
+            "title": "Coffee Bar",
+            "image": "../app/img/coffee_bar_1.jpg",
+            "imageDetail": "Breakfast at Coffee Bar",
+            "description": "Best scones in town with a nice warm latte."
+        },
+        {
+            "title": "Ritual Coffee",
+            "image": "../app/img/ritual_coffee.jpg",
+            "imageDetail": "Decaf drip coffee",
+            "description": "Decaf drip coffee while working."
+        },
+        {
+            "title": "Coffee Bar",
+            "image": "../app/img/coffee_bar_2.jpg",
+            "imageDetail": "Perfect latte",
+            "description": "Beautiful latte in a cold San Francisco morning."
+        }
+    ]
+}

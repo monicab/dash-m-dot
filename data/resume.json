@@ -1,0 +1,218 @@
+[
+    {
+        "id": "tuneup",
+        "title": "Frontend Engineer",
+        "company": "TuneUp Media",
+        "companyUrl": "http://www.tuneupmedia.com/",
+        "location": "San Francisco",
+        "duration": "October 2011 – Present (1 year 3 months)",
+        "responsibilities": [
+            {
+                "description": "TuneUp is a desktop application that works with iTunes or Windows media player. It uses the Gecko layout engine for rendering its UI and XPCOM to communicate with sqlite and the containing fat client in order to access the music player."
+            },
+            {
+                "description": "Developed the lyrics functionality which included developing a javascript API to search and retrieve song lyrics, UI (html and css) to display content and to restrict access based on user's subscription."
+            },
+            {
+                "description": "Worked with product management and engineering to re-architecture and re-design the application."
+            },
+            {
+                "description": "Responsible for code maintenance and necessary production hot fixes."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "javascript"
+            },
+            {
+                "keyword": "html"
+            },
+            {
+                "keyword": "json"
+            },
+            {
+                "keyword": "sqlite"
+            }
+        ]
+    },
+    {
+        "id": "bingham",
+        "title": "Senior Applications Developer",
+        "company": "Bingham",
+        "companyUrl": "http://bingham.com/",
+        "location": "San Francisco",
+        "duration": "November 2010 – October 2011 (1 year)",
+        "responsibilities": [
+            {
+                "description": "Part of the team responsible for developing a web based application for managing all the new business of the company."
+            },
+            {
+                "description": "Used K2 .NET BPM for automating the different business processes, notifications and escalations related with reviewing, accepting or declining a new client."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "ASP .NET"
+            },
+            {
+                "keyword": "C#"
+            },
+            {
+                "keyword": "K2 .NET BPM"
+            }
+        ]
+    },
+    {
+        "id": "gracenote",
+        "title": "Senior Applications Developer",
+        "company": "Gracenote",
+        "companyUrl": "http://www.gracenote.com/",
+        "location": "Emeryville",
+        "duration": "October 2008 – November 2010 (2 years 2 months)",
+        "responsibilities": [
+            {
+                "description": "Responsible for managing the content applications system migration project. The scope of this project includes more than 10 applications/systems and involves 3 different teams."
+            },
+            {
+                "description": "Responsible for all content applications related with Gracenote’s Video projects. These include web applications and Java applications that process video related metadata submitted by internal editors and partners."
+            },
+            {
+                "description": "Introduced Rich Internet Applications (RIA) using Adobe’s FLEX framework to the team in order to increase productivity and the expressiveness of the applications developed. Applications developed using FLEX as the front-end technology are implemented using Cairngorm architecture and using Spring BlazeDS for Java remoting."
+            },
+            {
+                "description": "Implemented continuous integration using Hudson and Ant. All projects had jobs for nightly builds and jobs for QA builds based on a label."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "Flex"
+            },
+            {
+                "keyword": "BlazeDS"
+            },
+            {
+                "keyword": "Java"
+            },
+            {
+                "keyword": "Oracle 10g"
+            }
+        ]
+    },
+    {
+        "id": "heller",
+        "title": "Senior Application Developer",
+        "company": "Heller Ehrman",
+        "companyUrl": "http://www.hewm.com/",
+        "location": "San Francisco",
+        "duration": "May 2005 – October 2008 (3 years 6 months)",
+        "responsibilities": [
+            {
+                "description": "Responsible for maintaining and developing new features for the company’s Extranet, written in C#, ASP .NET, WSS 2.0 and SQL Server 2005. Work directly with the business dev group."
+            },
+            {
+                "description": "Developed web application responsible for managing all the new business of the company, written in ASP .NET, C# and CSLA .NET framework. Used K2 .NET workflow engine to manage the business logic."
+            },
+            {
+                "description": "Responsible for maintaining a Windows client application for internal user that allows employees to publish documents to the Extranet. Written in VB .NET and C#, using Web Services to talk with SharePoint API."
+            },
+            {
+                "description": "Early adopter of Team Foundation Server and Visual Studio Team Systems. Responsible for defining and implementing the software release process of the team and source control code structure guidelines."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "ASP .NET"
+            },
+            {
+                "keyword": "C#"
+            },
+            {
+                "keyword": "WSS 2.0"
+            },
+            {
+                "keyword": "SQL Server 2005"
+            },
+            {
+                "keyword": "Team Foundation Server"
+            }
+        ]
+    },
+    {
+        "id": "provident",
+        "title": "Senior Web Developer",
+        "company": "Provident Funding",
+        "companyUrl": "https://www.provident.com/",
+        "location": "Burlingame",
+        "duration": "December 2001 – May 2005 (3 years 6 months)",
+        "responsibilities": [
+            {
+                "description": "Part of team responsible for developing the company's retail website that allowed clients to shop for mortgage loans and submit an application for a loan."
+            },
+            {
+                "description": "Developed internal web services used by the different websites and windows clients using C#."
+            },
+            {
+                "description": "Developed and integrated different partners' (e.g., GMAC, First American Title) web services used by the company applications, written C#."
+            },
+            {
+                "description": "Developed Message/Client system responsible for making synchronous and asynchronous calls to third parties web services using MSMQ, C#."
+            },
+            {
+                "description": "Responsible for developing a set of generic classes like database access, web controls and user controls, error logging using C# and ASP .NET."
+            },
+            {
+                "description": "Managed a small team of engineers overseas."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "ASP .NET"
+            },
+            {
+                "keyword": "C#"
+            },
+            {
+                "keyword": "MSMQ"
+            }
+        ]
+    },
+    {
+        "id": "lycos",
+        "title": "Junior Software Engineer",
+        "company": "Lycos",
+        "companyUrl": "http://lycos.com/",
+        "location": "San Francisco",
+        "duration": "January 2000 – November 2000 (11 months)",
+        "responsibilities": [
+            {
+                "description": "Responsible for ongoing development and maintenance of Wired's HotBot web search engine."
+            },
+            {
+                "description": "Developed a runtime error log system for HotBot using ASP, XML and XSL."
+            },
+            {
+                "description": "Responsible for ongoing development and maintenance of Lycos Music web site."
+            },
+            {
+                "description": "Developed feed scripts for Lycos Music for the dynamic content that changes periodically. Scripts built in Perl and VBScript using XML and XSL."
+            },
+            {
+                "description": "Developed a Presentation Toolkit to be used all over the Lycos network. Set of components that would allow to built a Lycos Network web site in a standard way. Based on ASP and XML."
+            },
+            {
+                "description": "Developed shell scripts and perl scripts to automate some QA tasks."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "Perl"
+            },
+            {
+                "keyword": "ASP"
+            },
+            {
+                "keyword": "XML"
+            }
+        ]
+    }
+]

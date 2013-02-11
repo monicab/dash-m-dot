@@ -1,0 +1,95 @@
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="span9">
+            <div class="page-header">
+                <h1>HTML, CSS, Javascript</h1>
+
+                <p>Random notes about my experience with HTML, CSS and Javascript.</p>
+            </div>
+            <section id="funnymath">
+                <h3>Funny Math With JS</h3>
+
+                <p>In this first example, you can see type coercion in action. When the Javascript interpreter finds a
+                    string, it coverts all other arguments of the addition operation into strings.</p>
+<pre>
+    >>> '1' + 2 + 3 // returns '123'
+    >>> 3 + 2 + '1' // returns '51'
+    >>> 3 + 2 + 1 // returns 6
+</pre>
+                <br>
+
+                <p>With this example, we can see that boolean false is coverted to 0 and true is converted to 1.</p>
+<pre>
+    >>> false + 0 // returns 0
+    >>> true + 0 // returns 1
+    >>> false - 0; // returns 0
+    >>> true - 0; // returns 1
+</pre>
+                <br>
+
+                <p>When I was playing with parseInt, I was curious to see if parseInt(false) = 0 and parseInt(true) = 1
+                    but it's not.</p>
+<pre>
+    >>> parseInt('1.0') //returns 1
+    >>> parseInt('2.5') //returns 2
+    >>> parseInt('1.45abc') //returns 1
+    >>> parseInt(false) //returns NaN
+    >>> parseInt(true) //returns NaN
+</pre>
+
+<pre>
+    >>> parseFloat('1.5') // returns 1.5
+    >>> parseFloat('1.0') // returns 1
+    >>> parseFloat('1.45abc') //returns 1.45
+    >>> parseFloat('1.50') //returns 1.5
+    >>> parseFloat('1.50').toFixed(2) //returns "1.50"
+</pre>
+
+                <br>
+
+                <p>No surprises with Math.round!</p>
+<pre>
+    >>> Math.round('1.3') //returns 1
+    >>> Math.round('1.5') //returns 2
+    >>> Math.round('1.8') //returns 2
+    >>> Math.round('1.45abc') //returns NaN
+</pre>
+
+                <br>
+
+                <p>Even though you wouldn't expect 0.1 + 0.2 = 0.30000000000000004, this is actually not a bug but done
+                    by design. Check the <a ="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">
+                    floating-point arithmetic</a> article.
+                    If you are dealing with currency, just do the trick display below. </p>
+<pre>
+    >>> 0.1 + 0.2 // returns 0.30000000000000004
+    >>> (0.1*10 + 0.2*10)/10 // returns 0.3
+</pre>
+            </section>
+            <div class="page-header"></div>
+            <section id="strings">
+                <h3>Strings With JS</h3>
+
+                <p><i>substring</i> method does NOT include the character in the index passed as the second argument
+                    while <i>substr</i> does.</i></p>
+<pre>
+    >>> var message = "San Francisco is a great city!";
+    >>> message.substring(1, 4) // return "an "
+    >>> message.substr(1, 4)    // returns "an F"
+</pre>
+            </section>
+        </div>
+        <div id="technicalNavBar" class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix">
+                <li class="nav-header">Random Thoughts</li>
+                <li>
+                    <ul class="nav nav-list">
+                        <li><a href="#funnymath" ng-click="scrollTo('funnymath')"><i class="icon-chevron-left"></i>Funny math with JS</a></li>
+                        <li><a href="#strings" ng-click="scrollTo('strings')"><i class="icon-chevron-left"></i>Strings with JS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

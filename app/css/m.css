@@ -1,0 +1,29 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.nav-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.label-info.technology {
+    margin-right: 5px;
+}
+
+.linkedin {
+    background: url("../img/linkedin.png") no-repeat scroll center left transparent;
+    background-size: 20px 20px;
+    padding-left: 24px;
+}
+
+.pdf {
+    background: url("../img/pdf.png") no-repeat scroll center left transparent;
+    background-size: 20px 20px;
+    padding-left: 24px;
+}
+
+ul.links {
+   list-style: none;
+}

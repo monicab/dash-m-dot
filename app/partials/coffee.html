@@ -1,0 +1,31 @@
+<div class="container" ng-controller="CoffeeCtrl">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="span9">
+            <div class="row-fluid">
+                <div class="span4" ng-repeat="spot in favoriteDetails">
+                    <ul class="thumbnails">
+                        <div class="thumbnail">
+                            <img ng-src={[{spot.image}]} alt="{[{spot.imageDetails}]}">
+                            <h4 ng-bind-template="{[{spot.title}]}"></h4>
+
+                            <p ng-bind-template="{[{spot.description}]}"></p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="resumeNavBar" class="span2 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix">
+                <li class="nav-header">My Favorite Spots</li>
+                <li>
+                    <ul class="nav nav-list">
+                        <li ng-repeat="spot in favoriteSpots"><a href="{[{spot.url}]}">{[{spot.name}]}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

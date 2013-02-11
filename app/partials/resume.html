@@ -1,0 +1,78 @@
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="span9">
+            <section>
+                <div class="page-header"></div>
+                <h3>About</h3>
+
+                <p>Really enjoy doing frontend development! Would love to grow my skills in this area and have the
+                    opportunity to work in a <a href="http://en.wikipedia.org/wiki/Single-page_application">single-page
+                        application (SPA)</a>.</p>
+
+                <p>Most important things in a work place for me are the TEAM, opportunities to learn, time flexibility
+                    and work/life balance.</p>
+            </section>
+            <section ng-repeat="job in jobs" id="{[{job.id}]}">
+                <div class="page-header"></div>
+                <h3>{[{job.title}]} @ <a href="{[{job.companyUrl}]}" ng-bind-template="{[{job.company}]}"></a></h3>
+                <h4 ng-bind-template="{[{job.duration}]} | {[{job.location}]}"></h4>
+                <dl class="dl-horizontal">
+                    <dt>Responsibilities</dt>
+                    <dd>
+                        <p ng-repeat="responsibilitie in job.responsibilities"
+                           ng-bind-template="{[{responsibilitie.description}]}"></p>
+                    </dd>
+                    <dt>Technologies</dt>
+                    <dd><span ng-repeat="technology in job.technologies" class="label label-info technology"
+                              ng-bind-template="{[{technology.keyword}]}"></span></dd>
+                </dl>
+            </section>
+            <section ng-repeat="edu in education" id="{[{edu.id}]}">
+                <div class="page-header"></div>
+                <ng-switch on="edu.institutionUrl">
+                    <h3 ng-switch-when="undefined" ng-bind-template="{[{edu.longTitle}]} @ {[{edu.institution}]}"></h3>
+
+                    <h3 ng-switch-default>{[{edu.longTitle}]} @ <a
+                            href="{[{edu.institutionUrl}]}">{[{edu.institution}]}</a></h3>
+                </ng-switch>
+                <h4>{[{edu.duration}]} | {[{edu.location}]}</h4>
+                <dl class="dl-horizontal" ng-repeat="responsibilitie in edu.responsibilities">
+                    <ng-switch on="responsibilitie.title">
+                        <dt ng-switch-when="undefined">Description</dt>
+                        <dt ng-switch-default><a href="{[{responsibilitie.titleUrl}]}"
+                                                 ng-bind-template="{[{responsibilitie.title}]}"></a></dt>
+                    </ng-switch>
+                    <dd>
+                        <p ng-bind-html-unsafe="responsibilitie.description"></p>
+                    </dd>
+                </dl>
+            </section>
+        </div>
+        <div id="resumeNavBar" class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix">
+                <li class="nav-header">Professional Experience</li>
+                <li>
+                    <ul class="nav nav-list">
+                        <li ng-repeat="job in jobs"><a ng-click="scrollTo(job.id)" href="#{[{job.id}]}"><i class="icon-chevron-left"></i>
+                            {[{job.company}]}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">Education</li>
+                <li>
+                    <ul class="nav nav-list">
+                        <li ng-repeat="edu in education"><a ng-click="scrollTo(edu.id)" href="#{[{edu.id}]}"><i class="icon-chevron-left"></i>{[{edu.title}]}</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-header">Links/Download</li>
+                <li>
+                    <ul class="links">
+                        <li class="linkedin"><a href="http://www.linkedin.com/in/mblaylock">LinkedIn</a></li>
+                        <!--<li class="pdf"><a href="http://linkedin.com/">Resume</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

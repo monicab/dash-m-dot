@@ -1,0 +1,34 @@
+<div class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavBarCtrl">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" ng-click="setActiveSectionByUrl('#/home')" href="/#home"> - m.</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav" ng-switch on="navItem.type"  ng-repeat="navItem in navigation">
+                    <li ng-switch-when="listItem" class="{[{navItem.state}]}"><a ng-click="setActiveSectionByUrl(navItem.url)" href="{[{navItem.url}]}">{[{navItem.name}]}</a></li>
+                    <li ng-switch-when="menu" class="dropdown">
+                        <a href="#" class="dropdown-toggle" class="{[{navItem.state}]}" data-toggle="dropdown" ng-click="setActiveSectionByUrl(navItem.url)">{[{navItem.name}]} <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <ng-switch on="menuItem.type" ng-repeat="menuItem in navItem.items">
+                                <li ng-switch-when="header" class="nav-header">{[{menuItem.name}]}</li>
+                                <li ng-switch-when="item"><a ng-click="setActiveSectionByUrl(navItem.url)" href="{[{menuItem.url}]}">{[{menuItem.name}]}</a></li>
+                            </ng-switch>
+                        </ul>
+                    </li>
+                </ul>
+                <!--
+                <form class="navbar-form pull-right">
+                    <input class="span2" type="text" placeholder="Email">
+                    <input class="span2" type="password" placeholder="Password">
+                    <button type="submit" class="btn">Sign in</button>
+                </form>
+                -->
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
