@@ -41,7 +41,6 @@ function NavBarCtrl($scope, $location) {
     }, 1);
 
     $scope.setActiveSectionByUrl = function(sectionUrl){
-        console.log("sectionUrl", sectionUrl);
         var item;
         for (var i = 0, len = $scope.navigation.length; i < len; i++) {
             item = $scope.navigation[i];

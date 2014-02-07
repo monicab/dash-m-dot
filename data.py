@@ -4,7 +4,7 @@ import os
 import webapp2
 
 from google.appengine.ext.webapp.util import run_wsgi_app
-import simplejson as json
+# import simplejson as json
 
 data_dir = os.path.join(os.path.dirname(__file__), 'data')
 

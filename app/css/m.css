@@ -27,3 +27,7 @@ body {
 ul.links {
    list-style: none;
 }
+
+footer {
+    margin-left: 30px;
+}
