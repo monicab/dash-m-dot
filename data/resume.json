@@ -1,11 +1,35 @@
 [
     {
+        "id": "okl",
+        "title": "Frontend Engineer",
+        "company": "One Kings Lane",
+        "companyUrl": "http://www.onekingslane.com/",
+        "location": "San Francisco",
+        "duration": "October 2013 – Present ",
+        "responsibilities": [
+            {
+                "description": "Part of the enterprise team. Responsible for developing next generations applications to support buyers, merchandising operations and vendors."
+            }
+        ],
+        "technologies": [
+            {
+                "keyword": "angularJS"
+            },
+            {
+                "keyword": "Sass"
+            },
+            {
+                "keyword": "Ruby on Rails"
+            }
+        ]
+    },
+    {
         "id": "tuneup",
         "title": "Frontend Engineer",
         "company": "TuneUp Media",
         "companyUrl": "http://www.tuneupmedia.com/",
         "location": "San Francisco",
-        "duration": "October 2011 – Present (1 year 3 months)",
+        "duration": "October 2011 – October 2013 (2 years)",
         "responsibilities": [
             {
                 "description": "TuneUp is a desktop application that works with iTunes or Windows media player. It uses the Gecko layout engine for rendering its UI and XPCOM to communicate with sqlite and the containing fat client in order to access the music player."
